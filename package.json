@@ -1,20 +1,44 @@
 {
-  "name": "template-react-component-library",
-  "version": "0.0.1",
-  "description": "",
+  "name": "@changchang0801/template-react-component-library",
+  "version": "0.0.2",
+  "description": "A react component library",
   "scripts": {
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
-  "author": "Chang",
+  "author": "Chang Guo",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "@babel/preset-typescript": "^7.17.12",
+    "@mdx-js/react": "^2.1.1",
     "@rollup/plugin-commonjs": "^22.0.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.2",
+    "@storybook/addon-actions": "^6.5.5",
+    "@storybook/addon-essentials": "^6.5.5",
+    "@storybook/addon-interactions": "^6.5.5",
+    "@storybook/addon-links": "^6.5.5",
+    "@storybook/builder-webpack4": "^6.5.5",
+    "@storybook/manager-webpack4": "^6.5.5",
+    "@storybook/react": "^6.5.5",
+    "@storybook/testing-library": "^0.0.11",
+    "@testing-library/react": "^13.2.0",
+    "@types/jest": "^27.5.1",
     "@types/react": "^18.0.9",
+    "babel-jest": "^28.1.0",
+    "babel-loader": "^8.2.5",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
     "react": "^18.1.0",
     "rollup": "^2.74.1",
     "rollup-plugin-dts": "^4.2.1",
+    "rollup-plugin-postcss": "^4.0.2",
     "typescript": "^4.6.4"
   },
   "main": "dist/cjs/index.js",
@@ -23,6 +47,9 @@
     "dist"
   ],
   "types": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/changchang0801"
+  },
   "dependencies": {
     "tslib": "^2.4.0"
   }
